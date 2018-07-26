@@ -25,21 +25,19 @@ export default new Router({
       component:document
     },{
       path:"/about",
-      component:about,
-      children:[
-        {
-          path:"/study",
-          component:study
-        },
-        {
-          path:"/work",
-          component:work
-        },
-        {
-          path:"/hobby",
-          component:hobby
-        }
-      ]
+      component:about
+    },
+    {
+      path:"/study",
+      component:study
+    },
+    {
+      path:"/work",
+      component:work
+    },
+    {
+      path:"/hobby",
+      component:hobby
     }
   ]
 })
