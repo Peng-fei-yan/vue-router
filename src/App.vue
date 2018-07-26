@@ -1,7 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <div class="nav-box">
+      <ul class="nav">
+        <router-link to="/home" tag="li">home</router-link>
+        
+        <router-link to="/document" tag="li">document</router-link>
+
+        <router-link to="/about" tag="li">about</router-link>
+      </ul>
+    </div>
+    
+    <router-view></router-view>
   </div>
 </template>
 
@@ -12,12 +21,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
