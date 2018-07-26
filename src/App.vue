@@ -42,12 +42,12 @@ export default {
   methods:{
     mouseOver(){
       this.bool=true;
-      console.log(111);
+      // console.log(111);
     },
 
     mouseLeave(){
       this.bool=false;
-      console.log(222);
+      // console.log(222);
       
     }
   }
